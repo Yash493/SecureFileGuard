@@ -11,7 +11,7 @@ public class SendOTPService {
         String to = email;
 
         // Sender's email ID needs to be mentioned
-        String from = "yashgaikwad493@gmail.com";
+        String from = "";
 
         // Assuming you are sending email through Gmail's SMTP
         String host = "smtp.gmail.com";
@@ -30,7 +30,7 @@ public class SendOTPService {
         // Get the Session object and pass username and password
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(from, "kxomgiopneynptiq");  // Ensure this is your correct app password
+                return new PasswordAuthentication(from, "");  // Ensure this is your correct app password
             }
         });
 
